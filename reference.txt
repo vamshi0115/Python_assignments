@@ -15,3 +15,12 @@ cp -r <old_name new_name>
 mkdir -p <folder_name/folder_name/........>
 ls -l <detaled info>
 ls -la <including hidden>
+chmod <755,777,444> text_name.txt
+
+git status
+git init
+git add <.,*,..>
+git status
+git commit -m <enter message> 
+git push (inserting files in github)
+git branch (to show the branch)
