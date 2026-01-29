@@ -1,0 +1,17 @@
+. current directroy
+.. previous directroy
+* all
+pwd (present working directroy)
+mv   (to move the files) (also for renaming the files)
+ls (list the folders)
+git --version
+git clone <repoURL> (cloning the git repositry)
+cd <folder name> (changing the directroy)
+touch <file_name> (creating a file) 
+mkdir (make directroy)
+rmdir (remove the empty directroy)
+rm -r <filename>
+cp -r <old_name new_name>
+mkdir -p <folder_name/folder_name/........>
+ls -l <detaled info>
+ls -la <including hidden>
