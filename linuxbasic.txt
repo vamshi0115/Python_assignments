@@ -1,0 +1,330 @@
+             			LINUX BASIC COMMANDS
+
+1) ll
+	List the names of the files in the current directory  along with the permissions, date, time and size
+
+                                                                                                                                                            
+2) df -h
+ 	 It is  used to show the amount of disk space that is free on file systems
+
+3) ls
+	It is used to list files or directories
+
+
+4) whoami
+
+            It is used to identify the current logged in user
+		
+	
+
+5) pwd
+ 	prints the complete path of the current working directory
+
+		
+
+6) date
+	It is used to display the system date and time
+		
+
+7) cal
+    	It is used to see the calendar of a specific month or a whole year
+			
+
+8) mkdir 
+           creamory in the system, as well as the buffers and caches  and available.
+te directories
+
+
+
+9) touch
+            create a new file
+
+
+10) cat
+	It reads data from the file and gives their content as output.
+
+11) wc
+	It allows you to count the number of lines, words, bytes, and characters.
+
+		
+12) mv
+            It is used to move files or directories.
+
+
+13) cp
+            It is used to copy files or directories.
+
+					
+14) chmod
+           It is used to change the access permissions of file system
+
+		
+15) head
+ 	The head command prints the first 10 lines of file
+
+16) tail
+ 	The tail command prints the first 10 lines of file
+
+
+17) what is
+	it is used to offer a one-line overview of command
+	
+
+18) fdisk -l
+	It is used to list the partition on hard drive 
+
+		
+19) free -m
+ 	Displays the total amount of free and used physical and swap me 
+
+		
+20) stat
+	It gives information about the file and filesystem.
+
+
+21) history
+	
+	It is used to view the previously executed command.	
+
+	
+22)sed commands
+		sed-> stream editor. It is commonly used for find and replace.
+
+	a) sed 's/findword/replaceword/g' sample.txt
+		The changes are displayed only in the console. It doesnot change the original content of the file.
+
+		
+	b) sed 's/findword/replaceword/g' > sample.txt
+
+
+	c) sed 's/findword/replaceword/g' >> sample.txt
+
+
+23)cat newfile.txt | tee newfile2.txt
+	Tee command reads the standard input and writes it to both the standard output and one or more files.
+
+24) mkdir -p  /sample/sample1/sample2/sample3/
+ 		It is used to create hierarchy directories.
+
+25) mkdir -pv sample/sample1/sample2/sample3
+
+	It is shows the process of creation hierarchy directories
+26)cat newfile.txt | tee -a newfile2.txt
+	
+	It will append the data
+
+27)tree foldername
+	It used to recursively list or display the content of a directory in a tree-like format.
+
+	Incase It shows error like command not found. Need to install tree
+
+
+30)du foldername
+	It displays the directory end to one.
+
+31) ls -R foldername
+	It displays the directory one to end
+
+
+32) cat -n filename
+	It shows the number of lines in the specific file.
+	
+33) cat file1.txt > file2.txt
+		It is used to copy the file without using cp,tee and sed command
+
+35) sort -n file.txt
+	It is used to sort the file (numbers(ascending order) words(alphabetical order))
+
+36) adduser jio
+
+	To create user.
+
+37) cut -d: -f1 /etc/passwd
+	It is used to display the list of user.
+		
+38) passwd username
+	It is used to create a password for specific user.
+	
+39) usermod -L username
+	It is used to lock the specific user.
+
+40) usermod -U username
+
+		It is used to unlock the specific user.
+41) id
+
+	It used to find out user and group names and numeric ID's (UID or group ID) of the current user or any other user in the server.
+
+42) file filename
+	It is used to determine the type of file.
+
+
+43) userdel username
+                   Delete the user
+
+44) Find
+
+	The find command is used to search and locate the list of files and directories based on conditions you specify for files that match the arguments
+
+	a)find -type f
+		It is used to display all the files.		
+	
+	b)find -type d
+		It is used to display all the directories.
+
+	c)find ./ -type f | wc -l
+			It shows the count of file type
+		
+	d)find /root -type f | wc -l
+		It shows the count of file types which is present under root path.
+		
+	e)find /root -type d | wc -l
+		It shows the count of directories which are present under root path
+
+	f) find ./ -type d | wc -l
+		It shows the count of directories
+		
+	g)find / -type d -empty | wc -l
+		It is used to dsiplay the word count of empty directory
+		
+	h)find /root -type d -empty | wc -l
+		It is used to display the word count of empty directories which are present under root path.
+		
+	j)find /root/sample -type f -empty | wc -l
+		It is used to display the word count of empty files type which are present under specific path.
+
+			
+45)compress(tar ,gz,bz2)
+
+	a)tar -cvf directoryname.tar directory
+		
+	b)gzip -v  sample.tar
+		
+	c)gunzip -v sample.tar.gz
+		
+	d)bzip2 -v sample.tar
+		
+	e)bunzip2 -v sample.tar.bz2
+		
+	f)tar -tvf sample.tar
+		It is used to list or view the files and directories of given tar archive 
+		
+	g)tar -xvf sample.tar
+		It is used to extract the tar archive
+	
+	h)tar -cvf root_all.tar newfile.txt original-ks.cfg sample sample.tar sample.txt test
+		It is used to compress specific files or folder whatever you want  in the format of tar archive.
+	
+46) change permission
+		It is used to change the permissio of directories or files.
+
+	a) chmod ugo=rwx filename
+		
+	b)chmod ugo=x filename
+		
+	
+	c)chmod -R 421 filename
+		
+
+	d)chmod -R 777 filename
+		
+		
+	e)chmod -R 000 filename
+		
+
+47) whereis java
+		It is used to find or display the path of binary files
+
+
+48) ps
+	The ps command is used to view currently running processes on the system.
+
+	a) ps -A (or) ps -e
+		It shows the currently running processess on the system but not in full fomat
+		
+
+	b) ps -ef
+		It shows the currently running processess on the system in full format.
+	
+
+	c) ps -r
+		It shows  latest  running processes on the system.
+
+
+	d) ps -a                                        
+	  	It show the running processes which are not associated with terminal.
+		
+
+49) awk
+	The awk command is used for text processing in Linux
+
+		a) awk '{print}' sample.txt
+
+			It is used to display the content of specific file without using cat command
+
+		b)  awk '/docker/ {print}' sample.txt
+			It displays the row of word contain docker.
+
+		c) awk '{print $2}' sample.txt    
+			It displays the 2nd  column of the entire file.
+
+
+50) netstat
+	It is used to listing all the listening port of udp and tcp
+
+	a) netstat -plnt
+
+		It is used to list the listening port of tcp
+
+		
+	b) netstat -plnu
+		It is used to list the listening ports of udp
+
+	c) netstat  -at
+		It displays the active tcp connections.
+		
+	d) netstat -au
+
+		It displays the active udp connections.
+
+	e) netstat -r 
+		It shows the current routing tables
+
+	f) netstat -ie
+		It shows the inteface.
+
+
+51)  ip a
+
+	It shows IP address
+
+52) wget https:google.com
+
+	It is used to download using wget.
+
+53) ls -a
+
+	It is used to list the hidden file also.
+
+54) ls -la
+
+	It shows the hidden file with detailed information  like permission,date and time .
+
+55) hostname
+	It display the hostname of the system.
+
+56) grep
+	grep stands for global search for regular expression and print out
+
+	a) grep -i "MANo" sample.txt
+		The -i option enables to search for a string case insensitively in the given file. It matches the words like Mano or mano or MANO.
+	
+
+	b) grep -ir "sample.txt"
+
+		It displays the sample.txt presents on the system including file path
+
+lll
+
+
+
